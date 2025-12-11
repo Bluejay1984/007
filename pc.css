@@ -264,7 +264,7 @@ article {
   bottom: 10%;
   transform: translateX(-50%);
 }
-article .map {
+article .out_map {
   width: 49%;
   height: 400px;
 }
