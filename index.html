@@ -15,7 +15,16 @@
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2879b15ae1371795ee3d0a2a2a933bcb"
     ></script>
     <link rel="stylesheet" href="css/m.css" media="all and (max-width:430px)" />
-    <link rel="stylesheet" href="css/pc.css" />
+    <link
+      rel="stylesheet"
+      href="css/m430.css"
+      media="all and (min-width:430px) and (max-width:900px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/pc.css"
+      media="all and (min-width:900px) "
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
@@ -23,7 +32,7 @@
   </head>
   <body>
     <header>
-      <a href="#"><img src="" alt="logo" /></a>
+      <a href="#"><img src="images/logo.png" alt="logo" /></a>
       <nav>
         <div class="login">
           <p><a href="#">로그인</a></p>
@@ -31,11 +40,49 @@
         </div>
         <div class="menu">
           <ul>
-            <li><a href="#">소개</a></li>
-            <li><a href="#">메뉴</a></li>
-            <li><a href="#">주문</a></li>
-            <li><a href="#">고객센터</a></li>
-            <li><a href="#">마이페이지</a></li>
+            <li>
+              <a href="#">소개</a>
+              <div class="m_hover1">
+                <a href="#">브랜드 철학</a>
+                <a href="#">브랜드 역사</a>
+                <a href="#">브랜드 유산</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">메뉴</a>
+              <div>
+                <a href="#">월요일</a>
+                <a href="#">화요일</a>
+                <a href="#">수요일</a>
+                <a href="#">목요일</a>
+                <a href="#">금요일</a>
+                <a href="#">토요일</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">주문</a>
+              <div>
+                <a href="#">매장위치</a>
+                <a href="#">단체예약</a>
+                <a href="#">출장문의</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+              <div>
+                <a href="#">게시판</a>
+                <a href="#">FAQ</a>
+                <a href="#">창업문의</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">마이페이지</a>
+              <div>
+                <a href="#">회원정보</a>
+                <a href="#">문의내역</a>
+                <a href="#">회원탈퇴</a>
+              </div>
+            </li>
             <li class="submenu">
               <div>
                 <a href="#">브랜드 철학</a>
@@ -69,6 +116,12 @@
           </ul>
         </div>
       </nav>
+      <div class="m_close">
+        <img src="images/circle-xmark-regular-full.svg" alt="close" />
+      </div>
+      <div class="m_bar">
+        <img src="images/bars-solid-full.svg" alt="close" />
+      </div>
     </header>
     <main>
       <!-- Slider main container -->
@@ -244,6 +297,7 @@
       </div>
       <div class="out_map">
         <div class="map"></div>
+        <p>전남 담양군 금성면 석현길 6 1층</p>
       </div>
     </article>
     <footer>
