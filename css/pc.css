@@ -267,7 +267,7 @@ article .out_map {
   width: 49%;
   height: 350px;
   overflow: hidden;
-  background: url(../images/map.PNG) no-repeat center/cover;
+  
 }
 article .out_map .map {
   width: 100vw;
@@ -336,3 +336,4 @@ footer ul {
   text-align: center;
   line-height: 30px;
 }
+
