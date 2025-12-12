@@ -44,17 +44,19 @@ sw(3, 30);
 // };
 
 // var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-let wd = 0;
+let wd = window.innerWidth;
+if (wd < 430) {
+  $(".menu").hide();
+}
 window.addEventListener("resize", function (e) {
   wd = window.innerWidth;
   if (wd < 430) {
     sw(1, 0);
   } else {
     sw(3, 30);
+    $(".menu").show();
   }
 });
-
-$(".menu").hide();
 
 $(".m_close").click(function () {
   $(".menu").hide();
